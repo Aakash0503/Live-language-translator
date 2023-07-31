@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<style>
+
+
+body {
+  background-color: #444d4e;
+  width: 400px; 
+  margin: auto;
+  color: #edf0f3;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Welcome to the website</h1>
+
+<form action="/url" method="GET">
+  <label for="username"> Please enter the text:</label>
+      <input type="text" id="username" name="username" minlength="3" maxlength="20">
+</form>
+
+<div>please select the language</div>
+
+
+<div id="google_element">
+</div>
+
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate">
+  <h3>ihf</h3>
+</script>
+
+<script>
+  function loadGoogleTranslate(){
+    new google.translate.TranslateElement(
+      "google_element"
+    );
+  }
+
+</script>
+
+</body>
+
+</html>
